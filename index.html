@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=" https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-box-and-violin-plot@2.2.0"></script>
+    <script src="https://pandameister.github.io/chartjs-chart-radial-gauge/docs/js/Chart.RadialGauge.umd.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="canvas-container">
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas id="areaChart"></canvas>
+            </div>
+        </div>
+        <div class="middle-panel">
+            <!-- Container for the SVG map -->
+            <div id="svg-container"></div>
+            <div id="legend">
+                <div id="legend-gradient"></div>
+                <div id="legend-text">
+                    <span>Low Population</span>
+                    <span>High Population</span>
+                </div>
+            </div>
+            <div class="middle-bottom">
+                <div class="canvas-container">
+                    <canvas id="donutChart"></canvas>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="boxPlot"></canvas>
+                </div>
+            </div>
+        </div>
+                      
+        <div class="right-panel">
+            <!-- Content for right panel -->
+            <div class="canvas-container right1">
+                <canvas id="scatterChart"></canvas>
+            </div>
+            <div class="canvas-container right2">
+                <div class="middle-bottom">
+                    <canvas id="gaugeChart"></canvas>
+                    <canvas id="gaugeChart2"></canvas> 
+                </div>               
+            </div>
+            <div class="canvas-container right3">
+                <canvas id="stackChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
